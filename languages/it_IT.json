@@ -1,0 +1,156 @@
+{
+  "flag": ":FLAG_ITALY:",
+  "main_menu": [
+    "<b>Emoji Captcha</b> :CHECK_MARK_BUTTON:{image}\n\n",
+    "Ciao, {mention}!\n",
+    "Aggiungimi a un gruppo come amministratore, e manderò ",
+    "un captcha a tutti i nuovi utenti che si uniranno ",
+    "per verificare che non siano spammer!\n\n",
+    ":INFORMATION: Utilizza i pulsanti qui sotto."
+  ],
+  "captcha_caption": [
+    ":SPARKLES: {mention}, seleziona tutte le emoji che vedi nell'immagine.\n",
+    ":LINK: Puoi fare <code>{mistakes}</code>."
+  ],
+  "captcha_completed": ":CHECK_MARK_BUTTON: {mention} ha risolto il captcha in <code>{time}</code>.",
+  "captcha_incorrect": [
+    ":CROSS_MARK: {mention} non è riuscito a risolvere il captcha, ",
+    "potrà riprovare <code>{time}</code>."
+  ],
+  "seconds": "0 secondi|1 secondo|{count} secondi",
+  "minutes": "0 minuti|1 minuto|{count} minuti",
+  "hours": "0 ore|1 ora|{count} ore",
+  "days": "0 giorni|1 giorno|{count} giorni",
+  "weeks": "0 settimane|1 settimana|{count} settimane",
+  "months": "0 mesi|1 mese|{count} mesi",
+  "years": "0 anni|1 anno|{count} anni",
+  "mistakes": "nessun errore|1 errore|{count} errori",
+  "please_wait": ":CROSS_MARK: <b>Aspetta</b> <code>{time}</code><b>.</b>",
+  "reload_top": "<b>Bot riavviato!</b> :LINK:",
+  "no_perms": ":CROSS_MARK: <code>Permessi mancanti.</code>",
+  "has_perms": ":CHECK_MARK_BUTTON: <code>Permessi corretti!</code>",
+  "reloaded_admins": ":CHECK_MARK_BUTTON: <code>Trovati {amount} amministratori.</code>",
+  "missing_permissions": [
+    ":CROSS_MARK: Qualcuno è entrato nel gruppo, ma non ho i permessi per mostrargli il captcha!\n",
+    "Per favore, dammi i permessi di 'bloccare utenti' e poi usa /riavvia."
+  ],
+  "added_to_group": [
+    "Grazie per avermi aggiunto al gruppo! :CHECK_MARK_BUTTON:\n",
+    "Per favore, dammi i permessi di 'bloccare utenti' e poi usa /riavvia.\n",
+    "Dopo ricordati di dare un'occhiata a /impostazioni per configurarmi!\n\n",
+    "<b>Tieni presente che se il gruppo è stato creato di recente, ",
+    "potrebbe volerci un po' prima che il bot inizi a funzionare.</b>"
+  ],
+  "reply_to_message": ":CROSS_MARK: Devi rispondere a un messaggio dell'utente che vuoi verificare.",
+  "unban": "Sbanna :CHECK_MARK_BUTTON:",
+  "unbanned": "Sbannato :CHECK_MARK_BUTTON:",
+  "waiting_for_verification": ":SPARKLES: {mention}, <i>per favore, verifica che tu non sia un bot.</i>",
+  "verify_now": ":ROBOT: Verifica ora",
+  "add_to_group": "Aggiungimi a un gruppo :BUSTS_IN_SILHOUETTE:",
+  "not_for_you": ":CROSS_MARK: Questo messaggio non è per te.",
+  "captcha_completed_private": ":CHECK_MARK_BUTTON: Hai completato il captcha del gruppo {mention} in <code>{time}</code>.",
+  "captcha_incorrect_private": [
+    ":CROSS_MARK: Non sei riuscito a completare il captcha del gruppo {mention}, ",
+    "potrai riprovare <code>{time}</code>."
+  ],
+  "in": "tra",
+  "when_they_rejoin": "quando ri-entrerà nel gruppo",
+  "when_you_rejoin": "quando ri-entrerai nel gruppo",
+  "verifying_group": "⏳ {mention} sta completando il captcha...",
+  "test_captcha": "Captcha di prova :BALLOON:",
+  "info": "Info :PACKAGE:",
+  "info_message": [
+    "<b>Emoji Captcha</b> :CHECK_MARK_BUTTON:\n\n",
+    "Bot sviluppato in <code>Python</code> da <a href='https://fumaz.dev'>Fumaz</a>.\n",
+    "Il codice sorgente è disponibile su <a href='https://github.com/Fumaz/EmojiCaptchaBot'>GitHub</a>"
+  ],
+  "back": "Indietro :RIGHT_ARROW_CURVING_LEFT:",
+  "language": "Lingua {flag}",
+  "settings": "Impostazioni :GEAR:",
+  "language_select_private": [
+    "<b>Emoji Captcha</b> :CHECK_MARK_BUTTON:\n\n",
+    "<i>Seleziona la tua lingua.</i>"
+  ],
+  "language_select_group": ":INFORMATION: <i>Seleziona la lingua per</i> {mention}<i>.</i>",
+  "language_selected": "{flag} Lingua cambiata correttamente.",
+  "settings_menu": [
+    "<b>Impostazioni</b> :GEAR:{image}\n\n",
+    "Stai modificando le impostazioni di {mention}. ",
+    "Usa i pulsanti qui sotto."
+  ],
+  "not_admin": ":CROSS_MARK: Non sei un amministratore di questo gruppo.",
+  "verify_rejoins": "Verifica al rientro {status}",
+  "allowed_mistakes": "Errori Consentiti :COUNTERCLOCKWISE_ARROWS_BUTTON:",
+  "background": "Sfondo :FIREWORKS:",
+  "verification_type": "Tipo di captcha :OPEN_MAILBOX_WITH_RAISED_FLAG:",
+  "delay": "Durata del ban :HOURGLASS_NOT_DONE:",
+  "close": "Chiudi :CROSS_MARK:",
+  "verify_rejoins_enabled": ":CHECK_MARK_BUTTON: Ora gli utenti dovranno effettuare il captcha ogni volta che rientrano nel gruppo.",
+  "verify_rejoins_disabled": ":CROSS_MARK: Ora gli utenti non dovranno effettuare il captcha ogni volta che entrano nel gruppo.",
+  "allowed_mistakes_message": [
+    "<b>Errori Consentiti</b> :COUNTERCLOCKWISE_ARROWS_BUTTON:\n\n",
+    "Qui puoi modificare il numero di errori che l'utente può fare mentre risolve un captcha.\n\n",
+    ":INFORMATION: <i>Il numero corrente è:</i> <code>{amount}</code>"
+  ],
+  "allowed_mistakes_cannot_be": ":CROSS_MARK: Gli errori consentiti non possono essere {amount}.",
+  "reset": "Reset :COUNTERCLOCKWISE_ARROWS_BUTTON:",
+  "background_message": [
+    "<b>Sfondo</b> :FIREWORKS:{image}\n\n",
+    "Qui puoi cambire lo sfondo del captcha.\n\n",
+    "ℹ️ <i>L'immagine corrente è:</i>"
+  ],
+  "change": "Cambia :LINK:",
+  "send_new_background": ":HOURGLASS_NOT_DONE: {mention}, rispondi a <b>questo</b> messaggio con il nuovo sfondo (mandalo come foto).",
+  "verification_type_message": [
+    "<b>Tipo di captcha</b> :OPEN_MAILBOX_WITH_RAISED_FLAG:\n\n",
+    "Qui puoi cambiare il tipo di captcha.\n\n",
+    "<code>GRUPPO</code> - Il captcha verrà inviato nel gruppo.\n",
+    "<code>PRIVATO</code> - Il captcha verrà inviato all'utente in chat privata.\n\n",
+    ":INFORMATION: <i>Tipo di captcha corrente:</i> <code>{current}</code>"
+  ],
+  "private": "Privato :BUST_IN_SILHOUETTE:",
+  "group": "Gruppo :BUSTS_IN_SILHOUETTE:",
+  "error": ":CROSS_MARK: Errore",
+  "delay_message": [
+    "<b>Durata del ban</b> :HOURGLASS_NOT_DONE:\n\n",
+    "Qui puoi cambiare quanto tempo l'utente deve aspettare per ri-entrare nel gruppo quando fallisce un captcha.\n\n",
+    ":INFORMATION: <i>Durata corrente:</i> <code>{time}</code>"
+  ],
+  "no_delay": "Solo kick :CROSS_MARK:",
+  "where_open_settings": ":QUESTION_MARK: <b>Dove vuoi aprire le impostazioni?</b>",
+  "here": "Qui :BUSTS_IN_SILHOUETTE:",
+  "group_only_command": ":CROSS_MARK: <b>Questo comando può essere usato solo nei gruppi.</b>",
+  "cannot_verify_admins": ":CROSS_MARK: <b>Non puoi verificare gli amministratori.</b>",
+  "cannot_verify_bots": ":CROSS_MARK: <b>Non puoi verificare i bot.</b>",
+  "cannot_verify_bot_admin": ":CROSS_MARK: <b>Non puoi verificare questo utente in quanto supporter del bot.</b>",
+  "support": "Supporto :THOUGHT_BALLOON:",
+  "bot_not_admin": ":CROSS_MARK: Non puoi usare questo comando finchè non mi dai i permessi di 'bloccare utenti' e fai /riavvia.",
+  "settings_choose_group": [
+    "<b>Impostazioni Gruppi</b> :GEAR:{image}\n",
+    "Seleziona il gruppo di cui vuoi modificare le impostazioni.\n\n",
+    "Se un gruppo in cui sei amministratore non appare qui, ",
+    "dì a un altro admin (o creatore del gruppo), di mandare /riavvia nel gruppo."
+  ],
+  "timeout_expired_group": [
+    ":CROSS_MARK: {mention} non è riuscito a completare il captcha in tempo, ",
+    "potrà riprovare <code>{time}</code>."
+  ],
+  "timeout_expired_private": [
+    ":CROSS_MARK: Non sei riuscito a completare il captcha del gruppo {mention} in tempo, ",
+    "potrai riprovare <code>{time}</code>."
+  ],
+  "timeout": "Tempo Limite :ALARM_CLOCK:",
+  "timeout_message": [
+    "<b>Tempo Limite</b> :ALARM_CLOCK:\n\n",
+    "Qui puoi cambiare quanto tempo l'utente ha a disposizione per completare il captcha.\n\n",
+    ":INFORMATION: <i>Il timeout inizia</i>: <code>{type}</code>\n",
+    ":INFORMATION: <i>Tempo corrente</i>: <code>{time}</code>"
+  ],
+  "timeout_disabled": ":CROSS_MARK: Timeout disabilitato.",
+  "timeout_on_join": "quando l'utente entra nel gruppo.",
+  "timeout_on_captcha": "quando l'utente inizia il captcha.",
+  "enable": "Abilita :CHECK_MARK_BUTTON:",
+  "disable": "Disabilita :CROSS_MARK:",
+  "on_join": "All'entrata :DOOR:",
+  "on_captcha": "Al captcha :HOT_SPRINGS:"
+}

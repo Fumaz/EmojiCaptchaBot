@@ -1,0 +1,156 @@
+{
+  "flag": ":FLAG_UNITED_STATES:",
+  "main_menu": [
+    "<b>Emoji Captcha</b> :CHECK_MARK_BUTTON:{image}\n\n",
+    "Hello, {mention}!\n",
+    "Add me to a group as admin, and I will send a ",
+    "captcha to any new user that joins it to verify ",
+    "themselves!\n\n",
+    ":INFORMATION: Use the buttons below."
+  ],
+  "captcha_caption": [
+    ":SPARKLES: {mention}, select all the emojis you see in the picture.\n",
+    ":LINK: You are allowed <code>{mistakes}</code>."
+  ],
+  "captcha_completed": ":CHECK_MARK_BUTTON: {mention} verified themselves in <code>{time}</code>.",
+  "captcha_incorrect": [
+    ":CROSS_MARK: {mention} failed to verify themselves, ",
+    "they can try again <code>{time}</code>."
+  ],
+  "seconds": "0 seconds|1 second|{count} seconds",
+  "minutes": "0 minutes|1 minute|{count} minutes",
+  "hours": "0 hours|1 hour|{count} hours",
+  "days": "0 days|1 day|{count} days",
+  "weeks": "0 weeks|1 week|{count} weeks",
+  "months": "0 months|1 month|{count} months",
+  "years": "0 years|1 year|{count} years",
+  "mistakes": "no mistakes|1 mistake|{count} mistakes",
+  "please_wait": ":CROSS_MARK: <b>Please wait</b> <code>{time}</code><b>.</b>",
+  "reload_top": "<b>Reloaded!</b> :LINK:",
+  "no_perms": ":CROSS_MARK: <code>Permissions missing.</code>",
+  "has_perms": ":CHECK_MARK_BUTTON: <code>Permissions are correct!</code>",
+  "reloaded_admins": ":CHECK_MARK_BUTTON: <code>Found {amount} admins.</code>",
+  "missing_permissions": [
+    ":CROSS_MARK: Someone joined the group, but I don't have permissions to show them the captcha!\n",
+    "Please, give me permissions to 'ban users' and then type /reload."
+  ],
+  "added_to_group": [
+    "Thanks for adding me to the group! :CHECK_MARK_BUTTON:\n",
+    "Please give me permissions to 'ban users' and then type /reload.\n",
+    "Remember to check out the /settings afterwards to configure me!\n\n",
+    "<b>Please note that if the group was recently created, ",
+    "it might take a while for the bot to start working.</b>"
+  ],
+  "reply_to_message": ":CROSS_MARK: Please reply to a message of the target user.",
+  "unban": "Unban :CHECK_MARK_BUTTON:",
+  "unbanned": "Unbanned :CHECK_MARK_BUTTON:",
+  "waiting_for_verification": ":SPARKLES: {mention}, <i>please verify that you're not a bot.</i>",
+  "verify_now": ":ROBOT: Verify now",
+  "add_to_group": "Add me to a group :BUSTS_IN_SILHOUETTE:",
+  "not_for_you": ":CROSS_MARK: This message is not for you.",
+  "captcha_completed_private": ":CHECK_MARK_BUTTON: You verified yourself in group {mention} in <code>{time}</code>.",
+  "captcha_incorrect_private": [
+    ":CROSS_MARK: You failed to verify yourself in group {mention}, ",
+    "you can try again <code>{time}</code>."
+  ],
+  "in": "in",
+  "when_they_rejoin": "when they rejoin",
+  "when_you_rejoin": "when you rejoin",
+  "verifying_group": "⏳ {mention} is verifying themselves...",
+  "test_captcha": "Test Captcha :BALLOON:",
+  "info": "Info :PACKAGE:",
+  "info_message": [
+    "<b>Emoji Captcha</b> :CHECK_MARK_BUTTON:\n\n",
+    "Bot developed in <code>Python</code> by <a href='https://fumaz.dev'>Fumaz</a>.\n",
+    "The source code is available on <a href='https://github.com/Fumaz/EmojiCaptchaBot'>GitHub</a>"
+  ],
+  "back": "Back :RIGHT_ARROW_CURVING_LEFT:",
+  "language": "Language {flag}",
+  "settings": "Settings :GEAR:",
+  "language_select_private": [
+    "<b>Emoji Captcha</b> :CHECK_MARK_BUTTON:\n\n",
+    "<i>Please select your language.</i>"
+  ],
+  "language_select_group": ":INFORMATION: <i>Please select the language for</i> {mention}<i>.</i>",
+  "language_selected": "{flag} Language changed successfully.",
+  "settings_menu": [
+    "<b>Settings</b> :GEAR:{image}\n\n",
+    "You are currently editing the settings for group {mention}. ",
+    "Please use the buttons below."
+  ],
+  "not_admin": ":CROSS_MARK: You are not an admin of this group.",
+  "verify_rejoins": "Verify Rejoins {status}",
+  "allowed_mistakes": "Allowed Mistakes :COUNTERCLOCKWISE_ARROWS_BUTTON:",
+  "background": "Background :FIREWORKS:",
+  "verification_type": "Verification Type :OPEN_MAILBOX_WITH_RAISED_FLAG:",
+  "delay": "Rejoin Delay :HOURGLASS_NOT_DONE:",
+  "close": "Close :CROSS_MARK:",
+  "verify_rejoins_enabled": ":CHECK_MARK_BUTTON: Now users will have to re-verify every time they rejoin.",
+  "verify_rejoins_disabled": ":CROSS_MARK: Now users won't have to re-verify if they rejoin the group.",
+  "allowed_mistakes_message": [
+    "<b>Allowed Mistakes</b> :COUNTERCLOCKWISE_ARROWS_BUTTON:\n\n",
+    "Here you can edit the number of mistakes each user is allowed to make when solving a captcha.\n\n",
+    ":INFORMATION: <i>The current amount is:</i> <code>{amount}</code>"
+  ],
+  "allowed_mistakes_cannot_be": ":CROSS_MARK: Allowed mistakes cannot be {amount}.",
+  "reset": "Reset :COUNTERCLOCKWISE_ARROWS_BUTTON:",
+  "background_message": [
+    "<b>Background</b> :FIREWORKS:{image}\n\n",
+    "Here you can change the captcha's background image.\n\n",
+    "ℹ️ <i>The current image is:</i>"
+  ],
+  "change": "Change :LINK:",
+  "send_new_background": ":HOURGLASS_NOT_DONE: {mention}, reply to <b>this</b> message with the new captcha background (as a photo).",
+  "verification_type_message": [
+    "<b>Verification Type</b> :OPEN_MAILBOX_WITH_RAISED_FLAG:\n\n",
+    "Here you can change the verification type.\n\n",
+    "<code>GROUP</code> - The captcha will be sent in the group.\n",
+    "<code>PRIVATE</code> - The captcha will be sent to the user in private chat.\n\n",
+    ":INFORMATION: <i>Current verification mode:</i> <code>{current}</code>"
+  ],
+  "private": "Private :BUST_IN_SILHOUETTE:",
+  "group": "Group :BUSTS_IN_SILHOUETTE:",
+  "error": ":CROSS_MARK: Error",
+  "delay_message": [
+    "<b>Rejoin Delay</b> :HOURGLASS_NOT_DONE:\n\n",
+    "Here you can change how long a user has to wait after they fail a captcha to rejoin the group.\n\n",
+    ":INFORMATION: <i>Current delay:</i> <code>{time}</code>"
+  ],
+  "no_delay": "No Delay :CROSS_MARK:",
+  "where_open_settings": ":QUESTION_MARK: <b>Where do you want to open the settings?</b>",
+  "here": "Here :BUSTS_IN_SILHOUETTE:",
+  "group_only_command": ":CROSS_MARK: <b>This command can only be used in groups.</b>",
+  "cannot_verify_admins": ":CROSS_MARK: <b>Sorry, you cannot verify admins.</b>",
+  "cannot_verify_bots": ":CROSS_MARK: <b>Sorry, you cannot verify bots.</b>",
+  "cannot_verify_bot_admin": ":CROSS_MARK: <b>Sorry, you cannot verify this user since they're a supporter.</b>",
+  "support": "Support :THOUGHT_BALLOON:",
+  "bot_not_admin": ":CROSS_MARK: You cannot use this command until you give me permissions to 'ban users' and type /reload.",
+  "settings_choose_group": [
+    "<b>Groups Settings</b> :GEAR:{image}\n",
+    "Please select the group whose settings you wish to change.\n\n",
+    "If a group in which you are an administrator doesn't appear here, ",
+    "please get another admin (or the creator of the group), to send /reload in the group."
+  ],
+  "timeout_expired_group": [
+    ":CROSS_MARK: {mention} failed to verify themselves before the timeout, ",
+    "they can try again <code>{time}</code>."
+  ],
+  "timeout_expired_private": [
+    ":CROSS_MARK: You failed to verify yourself in group {mention} before the timeout, ",
+    "you can try again <code>{time}</code>."
+  ],
+  "timeout": "Timeout :ALARM_CLOCK:",
+  "timeout_message": [
+    "<b>Timeout</b> :ALARM_CLOCK:\n\n",
+    "Here you can change how much time a user has to resolve the captcha.\n\n",
+    ":INFORMATION: <i>Current timeout start</i>: <code>{type}</code>\n",
+    ":INFORMATION: <i>Current timeout</i>: <code>{time}</code>"
+  ],
+  "timeout_disabled": ":CROSS_MARK: Timeout disabled.",
+  "timeout_on_join": "when the user joins the group.",
+  "timeout_on_captcha": "when the user starts the captcha.",
+  "enable": "Enable :CHECK_MARK_BUTTON:",
+  "disable": "Disable :CROSS_MARK:",
+  "on_join": "On Join :DOOR:",
+  "on_captcha": "On Captcha :HOT_SPRINGS:"
+}

@@ -1,0 +1,8 @@
+tgcrypto
+pyrogram
+Pillow
+plate
+psycopg2-binary
+pony
+flask
+apscheduler

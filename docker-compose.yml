@@ -1,0 +1,38 @@
+version: '3'
+
+volumes:
+  pg_data: { }
+
+networks:
+  internal: { }
+  nginx_net:
+    external:
+      name: nginx_net
+
+services:
+  bot:
+    container_name: "emojicaptcha_bot"
+    image: python:3.8.5-alpine
+    build: .
+    working_dir: /usr/src/app
+    volumes:
+      - ./src:/usr/src/app
+      - ./assets:/usr/src/app/assets
+      - ./languages:/usr/src/app/languages
+      - ./downloads:/usr/src/app/downloads
+    command: python3 run.py
+    networks:
+      - internal
+      - nginx_net
+    depends_on:
+      - postgres
+  postgres:
+    container_name: "emojicaptcha_db"
+    image: postgres
+    networks:
+      - internal
+    environment:
+      POSTGRES_DB: 'emojicaptcha'
+      POSTGRES_HOST_AUTH_METHOD: 'trust'
+    volumes:
+      - pg_data:/var/lib/postgresql/data
