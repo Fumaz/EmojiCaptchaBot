@@ -48,11 +48,6 @@ def token_code() -> str:
     return generate_code(VerificationToken)
 
 
-# noinspection PyTypeChecker
-def report_code() -> str:
-    return generate_code(BugReport)
-
-
 class BugReportStatus:
     OPEN = 'OPEN'
     FIXED = 'FIXED'
@@ -951,6 +946,7 @@ class SettingsInstance(db.Entity):
     def can_edit(self, user: User):
         return user.id in self.chat.administrators or user.is_admin
 
+
 class Timeout(db.Entity):
     id = PrimaryKey(int, auto=True)
     captcha = Optional(Captcha, column="captcha")
@@ -1097,7 +1093,4 @@ def setup():
 
     logging.warning('DB Initialized!')
 
-    config.VERSION = Changelog.get_latest_version() or 1.0
     Timeout.start_scheduler()
-
-    logging.warning(f'Bot Version: {config.VERSION}')
