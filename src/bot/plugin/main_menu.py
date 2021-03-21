@@ -25,7 +25,10 @@ def create(user) -> dict:
     language = InlineKeyboardButton(user.get_message('language', flag=user.get_message('flag')),
                                     callback_data='change_language_private')
 
-    keyboard = InlineKeyboardMarkup([[add_to_group], [test_captcha, support], [language, info]])
+    stats = InlineKeyboardButton(user.get_message('stats'),
+                                 callback_data='stats')
+
+    keyboard = InlineKeyboardMarkup([[add_to_group], [test_captcha, support], [language, info, stats]])
 
     return dict(text=msg, reply_markup=keyboard, disable_web_page_preview=False)
 

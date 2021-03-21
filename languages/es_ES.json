@@ -15,9 +15,9 @@
   "captcha_completed": ":CHECK_MARK_BUTTON: {mention} se verificó en <code>{time}</code>.",
   "captcha_incorrect": [
     ":CROSS_MARK: {mention} falló en verificarse, ",
-    "puede volver a intentarlo en <code>{time}</code>."
+    "puede volver a intentarlo <code>{time}</code>."
   ],
-  "seconds": "0 segundos|1 segundo|{count} segundo",
+  "seconds": "0 segundos|1 segundo|{count} segundos",
   "minutes": "0 minutos|1 minuto|{count} minutos",
   "hours": "0 horas|1 hora|{count} horas",
   "days": "0 días|1 día|{count} días",
@@ -51,11 +51,11 @@
   "captcha_completed_private": ":CHECK_MARK_BUTTON: Te verificaste en el grupo {mention} en <code>{time}</code>.",
   "captcha_incorrect_private": [
     ":CROSS_MARK: Has fallado en verificarte en el grupo {mention}, ",
-    "puedes volver a intentarlo en <code>{time}</code>."
+    "puedes volver a intentarlo <code>{time}</code>."
   ],
   "in": "en",
-  "when_they_rejoin": "cuando se reincorporan",
-  "when_you_rejoin": "cuando te reincorporas",
+  "when_they_rejoin": "cuando reingresan",
+  "when_you_rejoin": "cuando reingresas",
   "verifying_group": "⏳ {mention} se está verificando...",
   "test_captcha": "Probar Captcha :BALLOON:",
   "info": "Info :PACKAGE:",
@@ -74,28 +74,28 @@
   "language_select_group": ":INFORMATION: <i>Por favor elige el idioma para</i> {mention}<i>.</i>",
   "language_selected": "{flag} Idioma cambiado exitosamente.",
   "settings_menu": [
-    "<b>Settings</b> :GEAR:{image}\n\n",
+    "<b>Configuraciones</b> :GEAR:{image}\n\n",
     "Estas editando las configuraciones del grupo {mention}. ",
     "Por favor usa los botones de abajo."
   ],
   "not_admin": ":CROSS_MARK: No eres admin de este grupo.",
-  "verify_rejoins": "Verificar Reincorporaciones {status}",
+  "verify_rejoins": "Verificar Reingresos {status}",
   "allowed_mistakes": "Errores Permitidos :COUNTERCLOCKWISE_ARROWS_BUTTON:",
   "background": "Fondo :FIREWORKS:",
   "verification_type": "Tipo de Verificación :OPEN_MAILBOX_WITH_RAISED_FLAG:",
-  "delay": "Retraso de reincorporación :HOURGLASS_NOT_DONE:",
+  "delay": "Tiempo de reingreso :HOURGLASS_NOT_DONE:",
   "close": "Cerrar :CROSS_MARK:",
-  "verify_rejoins_enabled": ":CHECK_MARK_BUTTON: Ahora los usuarios tendran que volver a verificarse cada vez que se reincorporen.",
-  "verify_rejoins_disabled": ":CROSS_MARK: Ahora los usuarios no tendrán que volver a verificarse si se reincorporan al grupo.",
+  "verify_rejoins_enabled": ":CHECK_MARK_BUTTON: Ahora los usuarios tendran que volver a verificarse cada vez que reingresen.",
+  "verify_rejoins_disabled": ":CROSS_MARK: Ahora los usuarios no tendrán que volver a verificarse si reingresan al grupo.",
   "allowed_mistakes_message": [
-    "<b>Allowed Mistakes</b> :COUNTERCLOCKWISE_ARROWS_BUTTON:\n\n",
+    "<b>Errores Permitidos</b> :COUNTERCLOCKWISE_ARROWS_BUTTON:\n\n",
     "Aquí puedes editar el número de errores permitidos para cada usuario al resolver un captcha.\n\n",
     ":INFORMATION: <i>El número actual es:</i> <code>{amount}</code>"
   ],
   "allowed_mistakes_cannot_be": ":CROSS_MARK: Los errores permitidos no pueden ser mas de{amount}.",
   "reset": "Reiniciar :COUNTERCLOCKWISE_ARROWS_BUTTON:",
   "background_message": [
-    "<b>Background</b> :FIREWORKS:{image}\n\n",
+    "<b>Fondo</b> :FIREWORKS:{image}\n\n",
     "Aquí puedes cambiar la imagen de fondo del captcha.\n\n",
     "ℹ️ <i>La imagen actual es:</i>"
   ],
@@ -104,17 +104,17 @@
   "verification_type_message": [
     "<b>Tipo de verificación</b> :OPEN_MAILBOX_WITH_RAISED_FLAG:\n\n",
     "Aquí puedes cambiar el tipo de verificación.\n\n",
-    "<code>GROUP</code> - El captcha será enviado en el grupo.\n",
-    "<code>PRIVATE</code> - El captcha le será enviado en un chat privado al usuario.\n\n",
+    "<code>GRUPO</code> - El captcha será enviado en el grupo.\n",
+    "<code>PRIVADO</code> - El captcha le será enviado en un chat privado al usuario.\n\n",
     ":INFORMATION: <i>Modo actual de verificación:</i> <code>{current}</code>"
   ],
   "private": "Privado :BUST_IN_SILHOUETTE:",
   "group": "Grupo :BUSTS_IN_SILHOUETTE:",
   "error": ":CROSS_MARK: Error",
   "delay_message": [
-    "<b>Retraso de reincorporación</b> :HOURGLASS_NOT_DONE:\n\n",
-    "Aquí puedes cambiar cuanto tiempo un usuario debe esperar tras haber fallado el captcha para reincorporarse al grupo.\n\n",
-    ":INFORMATION: <i>Retraso actual:</i> <code>{time}</code>"
+    "<b>Tiempo de reingreso</b> :HOURGLASS_NOT_DONE:\n\n",
+    "Aquí puedes cambiar cuanto tiempo un usuario debe esperar tras haber fallado el captcha para reingresar al grupo.\n\n",
+    ":INFORMATION: <i>Tiempo actual:</i> <code>{time}</code>"
   ],
   "no_delay": "Sin retraso :CROSS_MARK:",
   "where_open_settings": ":QUESTION_MARK: <b>Dónde quieres abrir las configuraciones?</b>",
@@ -132,12 +132,12 @@
     "por favor pídele a otro admin (o al creador del grupo), que escriba /reload en el grupo."
   ],
   "timeout_expired_group": [
-    ":CROSS_MARK: {mention} falló en verificarse antes del tiempo límite, ",
+    ":CROSS_MARK: {mention} falló en verificarse dentro del tiempo límite, ",
     "puede volver a intentarlo en <code>{time}</code>."
   ],
   "timeout_expired_private": [
     ":CROSS_MARK: No lograste verificarte en el grupo {mention} antes del tiempo límite, ",
-    "puedes volver a intentarlo en <code>{time}</code>."
+    "puedes volver a intentarlo <code>{time}</code>."
   ],
   "timeout": "Tiempo límite :ALARM_CLOCK:",
   "timeout_message": [
@@ -152,5 +152,12 @@
   "enable": "Activar :CHECK_MARK_BUTTON:",
   "disable": "Desactivar :CROSS_MARK:",
   "on_join": "Al entrar :DOOR:",
-  "on_captcha": "Al iniciar captcha :HOT_SPRINGS:"
+  "on_captcha": "Al iniciar captcha :HOT_SPRINGS:",
+  "stats": "Estadísticas :CHART_INCREASING:",
+  "stats_message": [
+    "<b>Estadísticas</b> :CHART_INCREASING:\n\n",
+    ":BUSTS_IN_SILHOUETTE: Usuarios » <code>{users}</code>\n",
+    ":THOUGHT_BALLOON: Grupos » <code>{groups}</code>\n",
+    ":UNLOCKED: Captchas » <code>{captchas}</code>"
+  ]
 }

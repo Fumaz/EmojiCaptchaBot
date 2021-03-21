@@ -152,5 +152,12 @@
   "enable": "Enable :CHECK_MARK_BUTTON:",
   "disable": "Disable :CROSS_MARK:",
   "on_join": "On Join :DOOR:",
-  "on_captcha": "On Captcha :HOT_SPRINGS:"
+  "on_captcha": "On Captcha :HOT_SPRINGS:",
+  "stats": "Stats :CHART_INCREASING:",
+  "stats_message": [
+    "<b>Stats</b> :CHART_INCREASING:\n\n",
+    ":BUSTS_IN_SILHOUETTE: Users » <code>{users}</code>\n",
+    ":THOUGHT_BALLOON: Groups » <code>{groups}</code>\n",
+    ":UNLOCKED: Captchas » <code>{captchas}</code>"
+  ]
 }
