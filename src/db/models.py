@@ -790,7 +790,8 @@ class Captcha(db.Entity):
                     if captcha.chat.has_permissions:
                         try:
                             await client.restrict_chat_member(chat_id=captcha.chat.id, user_id=captcha.user.id,
-                                                              permissions=types.ChatPermissions(can_send_messages=True))
+                                                              permissions=(
+                                                                  await client.get_chat(captcha.chat.id)).permissions)
                         except RPCError:
                             pass
             elif status == CaptchaStatus.LOST:

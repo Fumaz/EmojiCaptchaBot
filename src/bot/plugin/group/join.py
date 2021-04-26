@@ -57,8 +57,9 @@ async def on_verify_callback(client, callback):
             await callback.message.delete()
 
             try:
+
                 await client.restrict_chat_member(chat_id=db_chat.id, user_id=db_user.id,
-                                                  permissions=types.ChatPermissions(can_send_messages=True))
+                                                  permissions=callback.chat.permissions)
             except:
                 pass
             return
