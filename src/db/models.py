@@ -558,38 +558,35 @@ class Captcha(db.Entity):
 
     @staticmethod
     async def verify_wait(client, chat, user, message=None):
-        try:
-            await client.restrict_chat_member(chat_id=chat.id, user_id=user.id,
-                                              permissions=types.ChatPermissions(can_send_messages=False))
+        await client.restrict_chat_member(chat_id=chat.id, user_id=user.id,
+                                          permissions=types.ChatPermissions(can_send_messages=False))
 
-            msg = chat.get_setting('waiting_for_verification')
+        msg = chat.get_setting('waiting_for_verification')
 
-            if msg:
-                msg = msg.format(mention=user.mention)
-            else:
-                msg = chat.get_message('waiting_for_verification', mention=user.mention)
+        if msg:
+            msg = msg.format(mention=user.mention)
+        else:
+            msg = chat.get_message('waiting_for_verification', mention=user.mention)
 
-            button = chat.get_setting('verify_now') or chat.get_message('verify_now')
-            destination = getattr(TokenDestination, chat.get_setting('verification_type', TokenDestination.GROUP))
-            token = VerificationToken.generate(user, chat, destination=destination)
-            button_data = {'text': button}
+        button = chat.get_setting('verify_now') or chat.get_message('verify_now')
+        destination = getattr(TokenDestination, chat.get_setting('verification_type', TokenDestination.GROUP))
+        token = VerificationToken.generate(user, chat, destination=destination)
+        button_data = {'text': button}
 
-            if destination == TokenDestination.GROUP:
-                button_data['callback_data'] = f'verify_{token.id}'
-            elif destination == TokenDestination.PRIVATE:
-                button_data['url'] = formatting.deeplink(f'verify_{token.id}')
+        if destination == TokenDestination.GROUP:
+            button_data['callback_data'] = f'verify_{token.id}'
+        elif destination == TokenDestination.PRIVATE:
+            button_data['url'] = formatting.deeplink(f'verify_{token.id}')
 
-            msg = await client.send_message(chat.id, text=msg, reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton(**button_data)]
-            ]), reply_to_message_id=message.message_id if message else None)
+        msg = await client.send_message(chat.id, text=msg, reply_markup=InlineKeyboardMarkup([
+            [InlineKeyboardButton(**button_data)]
+        ]), reply_to_message_id=message.message_id if message else None)
 
-            token.set_message_id(msg.message_id)
-            token.set_reply_to_message_id(message.message_id)
+        token.set_message_id(msg.message_id)
+        token.set_reply_to_message_id(message.message_id)
 
-            if token.timeout:
-                await token.timeout.start(client)
-        except Exception as e:
-            raise e
+        if token.timeout:
+            await token.timeout.start(client)
 
     @property
     def current(self) -> 'Captcha':
