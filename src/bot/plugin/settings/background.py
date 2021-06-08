@@ -126,4 +126,5 @@ async def on_send_new_background(_, message):
             except RPCError:
                 pass
 
+        message.db_user.reset_action()
         await message.reply_text(**create_message_data(settings))
